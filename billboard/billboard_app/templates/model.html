@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% load static%}
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <title>Billboard ITC</title>
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Pinyon+Script|Anton" rel="stylesheet">
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+        {% block header%}
+        {% endblock %}
+        <style>
+            .title{
+                font-family: 'Anton', sans-serif;
+                font-size: 40px;
+            }
+        </style>
+	</head>
+	<body>
+        <div class="container-fluid">
+            <div class="row text-center">
+                <div class="col title">BILLBOARD</div>
+            </div>
+            {% block content%}
+            {% endblock %}
+        </div>
+    </body>
+</html>
